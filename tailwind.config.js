@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
+        lovelight: ["Love Light", "sans-serif"],
       },
     },
   },
