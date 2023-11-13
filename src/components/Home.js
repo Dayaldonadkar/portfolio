@@ -19,7 +19,7 @@ const Home = () => {
             <p className="flex justify-center text-center text-xl font-medium">
               and I am Frontend Developer
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center text-[#909090]">
               <p className="flex justify-center text-center text-lg w-[90%]">
                 A passionate Full Stack Software Developer 🚀 having a special
                 interest in Frontend technologies and experience of building Web
