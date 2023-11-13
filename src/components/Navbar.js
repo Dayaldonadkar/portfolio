@@ -42,7 +42,7 @@ const Navbar = () => {
       </div>
 
       {showMenu && (
-        <div className="absolute top-10 bg-[#F8F9FA] w-[100%] flex justify-center md:hidden">
+        <div className="absolute top-14 bg-[#F8F9FA] w-[100%] flex justify-center md:hidden">
           <div className="space-y-2 py-3 font-montserrat text-sm">
             <p>Home</p>
             <p>About</p>
