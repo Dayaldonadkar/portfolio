@@ -12,6 +12,7 @@ const App = () => {
         <Navbar />
         <Home />
         <About />
+        <What />
       </BrowserRouter>
     </div>
   );
