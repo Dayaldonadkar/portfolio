@@ -3,7 +3,7 @@ import animate from "../Assets/animate.png";
 
 const About = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center font-montserrat">
       <div className="w-[90%]">
         <div className="my-10 flex justify-center">
           <img className="w-[60%]" src={animate} alt="boy" />
