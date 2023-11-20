@@ -3,7 +3,7 @@ import quadb from "../Assets/QBT Logo Black.png";
 
 const Card = () => {
   return (
-    <div className="bg-white my-8 py-3 w-[80%] font-montserrat shadow-lg rounded-2xl shadow-lg">
+    <div className="bg-white my-8 py-3 w-[90%] font-montserrat shadow-lg rounded-2xl shadow-lg">
       <div className="flex justify-center">
         <img src={quadb} alt="" />
       </div>

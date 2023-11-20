@@ -2,6 +2,7 @@ import React from "react";
 import Dayal from "../Assets/picofme.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
@@ -17,8 +18,26 @@ const Home = () => {
               Hi, I'm Dayal
             </h1>
             <p className="flex justify-center text-center text-xl font-medium">
-              and I am Frontend Developer
+              and I am
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString(" Front end Developer")
+                    .callFunction(() => {
+                      console.log("String typed out!");
+                    })
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .typeString(" Front end Develor")
+
+                    .callFunction(() => {
+                      console.log("All strings were deleted");
+                    })
+                    .start();
+                }}
+              />
             </p>
+
             <div className="flex justify-center text-[#909090]">
               <p className="flex justify-center text-center text-lg w-[90%]">
                 A passionate Full Stack Software Developer 🚀 having a special
