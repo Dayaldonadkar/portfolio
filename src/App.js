@@ -6,6 +6,7 @@ import About from "./components/About";
 import What from "./components/What";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import TechnologyUsed from "./components/TechnologyUsed";
 
 const App = () => {
   return (
@@ -15,8 +16,9 @@ const App = () => {
         <Home />
         <About />
         <Experience /> *
-        <Projects />
-        <What />
+        <Projects />*
+        <What />*
+        <TechnologyUsed />
       </BrowserRouter>
     </div>
   );
