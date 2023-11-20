@@ -17,7 +17,7 @@ const Home = () => {
             <h1 className="flex justify-center text-center text-5xl font-bold">
               Hi, I'm Dayal
             </h1>
-            <p className="flex justify-center text-center text-xl font-medium">
+            <p className="flex justify-center text-center text-xl font-medium pr-2">
               and I am
               <Typewriter
                 onInit={(typewriter) => {
@@ -28,7 +28,7 @@ const Home = () => {
                     })
                     .pauseFor(2500)
                     .deleteAll()
-                    .typeString(" Front end Develor")
+                    .typeString(" Front end Developer")
 
                     .callFunction(() => {
                       console.log("All strings were deleted");
@@ -49,14 +49,23 @@ const Home = () => {
 
             <div className="flex justify-center text-white pt-5 text-xl">
               <div className="flex flex-col items-center space-y-5">
-                <button className="flex items-center justify-center text-center bg-[#673AB7] w-60 py-4 rounded-md space-x-2">
-                  <GitHubIcon />
-                  <p>View on Github</p>
-                </button>
-                <button className="flex items-center justify-center bg-[#673AB7] w-60 py-4 rounded-md space-x-2">
-                  <LinkedInIcon />
-                  <p>View on LinkedIn</p>
-                </button>
+                <a
+                  href="https://github.com/Dayaldonadkar"
+                  target="_blank"
+                  f
+                  rel="noreferrer"
+                >
+                  <button className="flex items-center justify-center text-center bg-[#673AB7] w-60 py-4 rounded-md space-x-2">
+                    <GitHubIcon />
+                    <p>View on Github</p>
+                  </button>
+                </a>
+                <a href="https://www.linkedin.com/in/dayal-sudhakar-6657b8286/">
+                  <button className="flex items-center justify-center bg-[#673AB7] w-60 py-4 rounded-md space-x-2">
+                    <LinkedInIcon />
+                    <p>View on LinkedIn</p>
+                  </button>
+                </a>
               </div>
             </div>
           </div>

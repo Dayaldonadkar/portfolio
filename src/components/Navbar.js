@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center w-[100%] space-x-5">
           <h1 className="text-3xl text-[#673AB7] font-lovelight">Dayal</h1>
           <div className="flex justify-end">
-            <div className="hidden md:block md:text-sm lg:text-lg">
+            <div className="hidden md:block text-sm ">
               <div className="flex space-x-6 justify-end  font-montserrat text-[#707071] ">
                 <p className="hover:text-black hover:cursor-pointer">Home</p>
                 <p className="hover:text-black hover:cursor-pointer">About</p>

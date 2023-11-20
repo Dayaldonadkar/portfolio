@@ -1,5 +1,4 @@
 import React from "react";
-import hulu from "../Assets/Hulu.png";
 
 const ProjectCard = ({ image, description, name }) => {
   return (
