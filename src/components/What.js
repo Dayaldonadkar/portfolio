@@ -15,7 +15,7 @@ const What = () => {
     <div className="flex justify-center bg-[#F5F7F8] py-2 shadow-lg font-montserrat">
       <div className="w-[90%]">
         <h1 className="text-4xl font-bold flex justify-center">
-          <span className="border-b-4 border-[#673AB7]/40 px-1 pb-1">
+          <span className="border-b-4 border-[#673AB7]/40 px-1 py-1 pt-5">
             What I do?
           </span>
         </h1>

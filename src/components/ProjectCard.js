@@ -1,26 +1,23 @@
 import React from "react";
 import hulu from "../Assets/Hulu.png";
 
-const ProjectCard = () => {
+const ProjectCard = ({ image, description, name }) => {
   return (
-    <div className="flex justify-center shadow-2xl my-10">
-      <div className="w-[90%] font-montserrat">
+    <div className="flex justify-center my-10">
+      <div className="w-[90%] font-montserrat bg-white pb-4 rounded-lg">
         <a
           href="https://classy-lollipop-f7b5e3.netlify.app/"
           target="_blank"
           f
           rel="noreferrer"
         >
-          <img src={hulu} alt="" />
+          <img src={image} alt="" />
         </a>
-        <h6 className="text-xl font-semibold py-1 pt-5">HackerNews Clone</h6>
+        <h6 className="text-xl font-semibold py-1 mt-6 px-2 ">
+          <span className="border-t-2 pt-2 border-[#E8E8E8]">{name}</span>
+        </h6>
 
-        <p className="pl-2">
-          I've crafted a sleek HackerNews clone, combining a minimalist design
-          with powerful functionality. Experience the latest tech stories,
-          engage in discussions, and stay informed in a user-friendly
-          environment.
-        </p>
+        <p className="px-2 text-xs">{description}</p>
       </div>
     </div>
   );

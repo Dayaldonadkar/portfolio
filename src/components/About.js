@@ -16,7 +16,7 @@ const About = () => {
             </span>
           </h1>
           <div className="flex justify-center">
-            <p className="text-lg text-center text-[#909090] py-3 w-[90%] flex justify-center">
+            <p className="text-sm text-center text-[#909090] py-3 w-[95%] flex justify-center">
               Experienced front-end developer with a robust background in the
               software industry and startup sector. Seeking a challenging
               front-end developer role where I can leverage my expertise in

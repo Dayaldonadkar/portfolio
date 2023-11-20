@@ -14,9 +14,9 @@ const App = () => {
         <Navbar />
         <Home />
         <About />
-        <What />
+        <Experience /> *
         <Projects />
-        <Experience />
+        <What />
       </BrowserRouter>
     </div>
   );
