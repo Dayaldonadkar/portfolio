@@ -8,13 +8,13 @@ const TechnologyUsed = () => {
   return (
     <div className="flex justify-center">
       <div className="flex flex-col justify-center items-center w-[90%]">
-        <h1 className="text-xl font-bold">Technology Used</h1>
+        <h1 className=" font-semibold text-4xl">Technology Used</h1>
         <div className="flex justify-center">
           <div className="grid grid-cols-2 place-items-center">
-            <img className="w-[60%]" src={react} alt="" />
-            <img className="w-[60%]" src={taiwind} alt="" />
-            <img className="w-[60%]" src={java} alt="" />
-            <img className="w-[60%]" src={redux} alt="" />
+            <img className="w-[50%]" src={react} alt="" />
+            <img className="w-[50%]" src={taiwind} alt="" />
+            <img className="w-[50%]" src={java} alt="" />
+            <img className="w-[50%]" src={redux} alt="" />
             <img className="w-[50%]" src="" alt="" />
             <img className="w-[50%]" src="" alt="" />
           </div>
