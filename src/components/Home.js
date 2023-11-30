@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center" id="home">
       <div className="lg:flex lg:flex-row-reverse items-center lg:my-6 lg:w-[90%] xl:w-[78%] 2xl:w-[70%]">
         <div className="flex justify-center py-10">
           <img className="w-[60%] lg:w-[70%]" src={Dayal} alt="" />

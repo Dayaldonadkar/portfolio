@@ -1,5 +1,14 @@
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import { NavLink } from "react-router-dom";
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+} from "react-scroll";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -8,26 +17,66 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
+  const scrollTo = () => {
+    scroll.scrollTo(10); // Scrolling to 100px from the top of the page.
+  };
+
   return (
-    <div className="bg-[#F8F9FA] flex justify-center">
+    <div className="bg-[#F8F9FA] flex justify-center sticky top-0">
       <div className="flex justify-between w-[90%] md:w-[91%] py-3 relative">
         <div className="flex justify-between items-center w-[100%] space-x-5">
           <h1 className="text-3xl text-[#673AB7] font-lovelight">Dayal</h1>
           <div className="flex justify-end">
             <div className="hidden md:block text-sm ">
               <div className="flex space-x-6 justify-end  font-montserrat text-[#707071] ">
-                <p className="hover:text-black hover:cursor-pointer">Home</p>
+                <p
+                  onClick={scrollTo}
+                  className="hover:text-black hover:cursor-pointer"
+                >
+                  Home
+                </p>
+
                 <p className="hover:text-black hover:cursor-pointer">About</p>
-                <p className="hover:text-black hover:cursor-pointer">
-                  What I do
-                </p>
+                <Link
+                  activeClass="active"
+                  to="test1"
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}
+                >
+                  <p className="hover:text-black hover:cursor-pointer">
+                    What I do
+                  </p>
+                </Link>
                 <p className="hover:text-black hover:cursor-pointer">Skills</p>
+                <Link
+                  activeClass="active"
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  offset={500}
+                  duration={500}
+                >
+                  <p className="hover:text-black hover:cursor-pointer">
+                    Experience
+                  </p>
+                </Link>
+
                 <p className="hover:text-black hover:cursor-pointer">
-                  Experience
+                  {" "}
+                  <Link
+                    activeClass="active"
+                    to="project"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
+                    Projects
+                  </Link>
                 </p>
-                <p className="hover:text-black hover:cursor-pointer">
-                  Projects
-                </p>
+
                 <p className="hover:text-black hover:cursor-pointer">
                   Portfolio
                 </p>

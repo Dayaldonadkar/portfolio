@@ -10,17 +10,15 @@ import TechnologyUsed from "./components/TechnologyUsed";
 
 const App = () => {
   return (
-    <div>
-      <BrowserRouter>
-        <Navbar />
-        <Home />
-        <About />
-        <Experience /> *
-        <Projects />*
-        <What />*
-        <TechnologyUsed />
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Home />
+      <About />
+      <Experience />
+      <Projects />
+      <What />
+      <TechnologyUsed />
+    </BrowserRouter>
   );
 };
 

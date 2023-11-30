@@ -4,7 +4,10 @@ import hulu from "../Assets/Hulu.png";
 
 const Projects = () => {
   return (
-    <div className=" flex justify-center font-montserrat my-5 bg-[#F5F7F8]">
+    <div
+      className=" flex justify-center font-montserrat my-5 bg-[#F5F7F8]"
+      id="project"
+    >
       <div className="w-[100%]">
         <h1 className="text-4xl font-semibold text-center mt-5 mb-6">
           <span className="border-b-4 border-[#673AB7]/40 px-1 pb-1">
