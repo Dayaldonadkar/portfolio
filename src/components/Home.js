@@ -13,7 +13,7 @@ const Home = () => {
         </div>
 
         <div className="flex justify-center font-montserrat">
-          <div className="w-[80%] space-y-5 lg:space-y-2 xl:space-y-4">
+          <div className="sm:w-[80%] space-y-5 lg:space-y-2 xl:space-y-4">
             <h1 className="flex justify-center md:justify-start text-center text-5xl font-bold">
               Hi, I'm Dayal
             </h1>
@@ -39,16 +39,16 @@ const Home = () => {
             </p>
 
             <div className="flex justify-center md:justify-start  text-[#909090]">
-              <p className="flex justify-center text-center md:text-left w-[90%] lg:w-[90%]">
-                A passionate Full Stack Software Developer 🚀 having a special
-                interest in Frontend technologies and experience of building Web
+              <p className="flex justify-center md:text-left w-[85%] sm:w-[90%] lg:w-[90%]">
+                A passionate Front End Developer 🚀 having a special interest in
+                Frontend technologies and experience of building Web
                 applications with JavaScript / Reactjs / Nodejs and some other
                 cool libraries and frameworks.
               </p>
             </div>
 
             <div className="flex justify-center md:justify-start text-white pt-5">
-              <div className="flex flex-col  md:flex-row space-y-5 md:space-y-0 md:space-x-5">
+              <div className="flex flex-col  sm:flex-row space-y-5 md:space-y-0 md:space-x-5">
                 <a
                   href="https://github.com/Dayaldonadkar"
                   target="_blank"

@@ -18,12 +18,12 @@ const Navbar = () => {
   };
 
   const scrollTo = () => {
-    scroll.scrollTo(10); // Scrolling to 100px from the top of the page.
+    scroll.scrollTo(0); // Scrolling to 100px from the top of the page.
   };
 
   return (
     <div className="bg-[#F8F9FA] flex justify-center sticky top-0">
-      <div className="flex justify-between w-[90%] md:w-[91%] py-3 relative">
+      <div className="flex justify-between w-[90%] md:w-[91%] lg:w-[80%] xl:w-[65%]  py-3 relative">
         <div className="flex justify-between items-center w-[100%] space-x-5">
           <h1 className="text-3xl text-[#673AB7] font-lovelight">Dayal</h1>
           <div className="flex justify-end">
@@ -36,35 +36,20 @@ const Navbar = () => {
                   Home
                 </p>
 
-                <p className="hover:text-black hover:cursor-pointer">About</p>
-                <Link
-                  activeClass="active"
-                  to="test1"
-                  spy={true}
-                  smooth={true}
-                  offset={10}
-                  duration={500}
-                >
-                  <p className="hover:text-black hover:cursor-pointer">
-                    What I do
-                  </p>
-                </Link>
-                <p className="hover:text-black hover:cursor-pointer">Skills</p>
-                <Link
-                  activeClass="active"
-                  to="skills"
-                  spy={true}
-                  smooth={true}
-                  offset={500}
-                  duration={500}
-                >
-                  <p className="hover:text-black hover:cursor-pointer">
+                <p className="hover:text-black hover:cursor-pointer">
+                  <Link
+                    activeClass="active"
+                    to="experience"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
                     Experience
-                  </p>
-                </Link>
+                  </Link>
+                </p>
 
                 <p className="hover:text-black hover:cursor-pointer">
-                  {" "}
                   <Link
                     activeClass="active"
                     to="project"
@@ -76,6 +61,33 @@ const Navbar = () => {
                     Projects
                   </Link>
                 </p>
+
+                <p className="hover:text-black hover:cursor-pointer">
+                  <Link
+                    activeClass="active"
+                    to="what"
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={500}
+                  >
+                    What I do
+                  </Link>
+                </p>
+
+                <p className="hover:text-black hover:cursor-pointer">Skills</p>
+                <Link
+                  activeClass="active"
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}
+                >
+                  <p className="hover:text-black hover:cursor-pointer">
+                    Experience
+                  </p>
+                </Link>
 
                 <p className="hover:text-black hover:cursor-pointer">
                   Portfolio
