@@ -7,6 +7,7 @@ import What from "./components/What";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import TechnologyUsed from "./components/TechnologyUsed";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Projects />
       <What />
       <TechnologyUsed />
+      <Contact />
     </BrowserRouter>
   );
 };

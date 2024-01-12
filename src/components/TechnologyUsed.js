@@ -6,9 +6,9 @@ import redux from "../Assets/4691205_redux_icon.png";
 
 const TechnologyUsed = () => {
   return (
-    <div className="flex justify-center py-20 bg-[#F8F4EC]" id="skills">
+    <div className="flex justify-center py-32 bg-[#F8F4EC]" id="skills">
       <div className="flex flex-col justify-center items-center w-[90%]">
-        <h1 className=" font-semibold text-4xl">Skills</h1>
+        <h1 className=" font-semibold text-4xl pb-4">Skills</h1>
         <div className="flex justify-center">
           <div className="grid grid-cols-4 place-items-center space-x-5 sm:space-x-8 pt-5">
             <div className=" border-4 border-blue-500 rounded-full">

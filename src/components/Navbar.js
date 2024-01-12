@@ -21,6 +21,11 @@ const Navbar = () => {
     scroll.scrollTo(0); // Scrolling to 100px from the top of the page.
   };
 
+  const combinedFunction = () => {
+    scrollTo();
+    handleChange();
+  };
+
   return (
     <div className="bg-[#F8F9FA] flex justify-center sticky top-0 z-10">
       <div className="flex justify-between w-[90%] md:w-[91%] lg:w-[80%] xl:w-[65%]  py-3 relative">
@@ -30,7 +35,7 @@ const Navbar = () => {
             <div className="hidden md:block text-sm ">
               <div className="flex space-x-6 justify-end  font-montserrat text-[#707071] ">
                 <p
-                  onClick={scrollTo}
+                  onClick={combinedFunction}
                   className="hover:text-black hover:cursor-pointer"
                 >
                   Home
@@ -75,7 +80,6 @@ const Navbar = () => {
                   </Link>
                 </p>
 
-                <p className="hover:text-black hover:cursor-pointer">Skills</p>
                 <Link
                   activeClass="active"
                   to="skills"
@@ -89,9 +93,6 @@ const Navbar = () => {
                   </p>
                 </Link>
 
-                <p className="hover:text-black hover:cursor-pointer">
-                  Portfolio
-                </p>
                 <p className="hover:text-black hover:cursor-pointer">Contact</p>
               </div>
             </div>
@@ -104,13 +105,65 @@ const Navbar = () => {
 
       {showMenu && (
         <div className="absolute top-14 bg-[#F8F9FA] w-[100%] flex justify-center md:hidden">
-          <div className="space-y-2 py-3 font-montserrat text-sm">
-            <p>Home</p>
-            <p>About</p>
-            <p>What I do</p>
-            <p>Skills</p>
-            <p>Experience</p>
-            <p>Projects</p>
+          <div className=" py-3 font-montserrat text-[15px]">
+            <p
+              onClick={(() => scrollTo(), () => handleChange())}
+              className="hover:text-black hover:cursor-pointer py-1"
+            >
+              Home
+            </p>
+            <Link
+              activeClass="active"
+              to="experience"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              <p
+                className="hover:text-black hover:cursor-pointer"
+                onClick={() => handleChange()}
+              >
+                Experience
+              </p>
+            </Link>
+            <Link
+              activeClass="active"
+              to="what"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              <div
+                className="hover:text-black hover:cursor-pointer py-1"
+                onClick={() => handleChange()}
+              >
+                What I do
+              </div>
+            </Link>
+            <Link
+              activeClass="active"
+              to="project"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              <p className="hover:text-black hover:cursor-pointer">Projects</p>{" "}
+            </Link>
+            <Link
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+            >
+              <p className="hover:text-black hover:cursor-pointer py-1">
+                Skills
+              </p>
+            </Link>
           </div>
         </div>
       )}
