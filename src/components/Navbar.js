@@ -27,6 +27,7 @@ const Navbar = ({ handleChange, showMenu, setShowMenu }) => {
           <h1 className="text-3xl text-[#673AB7] font-lovelight font-medium">
             Dayal.<span className="text-lg font-semibold">dev</span>
           </h1>
+
           <div className="flex justify-end">
             <div className="hidden md:block text-sm ">
               <div className="flex space-x-6 justify-end  font-montserrat text-[#707071] ">
