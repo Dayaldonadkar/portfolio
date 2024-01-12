@@ -17,8 +17,8 @@ const Home = () => {
             <h1 className="flex justify-center md:justify-start text-center text-5xl font-bold">
               Hi, I'm Dayal
             </h1>
-            <p className="flex justify-center md:justify-start  text-center text-xl font-medium pr-2">
-              and I am
+            <p className="flex justify-center md:justify-start  text-center text-xl font-medium ">
+              <span className="pr-3"> and I am</span>
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter

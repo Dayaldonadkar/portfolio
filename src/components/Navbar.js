@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-[#F8F9FA] flex justify-center sticky top-0">
+    <div className="bg-[#F8F9FA] flex justify-center sticky top-0 z-10">
       <div className="flex justify-between w-[90%] md:w-[91%] lg:w-[80%] xl:w-[65%]  py-3 relative">
         <div className="flex justify-between items-center w-[100%] space-x-5">
           <h1 className="text-3xl text-[#673AB7] font-lovelight">Dayal</h1>
@@ -85,7 +85,7 @@ const Navbar = () => {
                   duration={500}
                 >
                   <p className="hover:text-black hover:cursor-pointer">
-                    Experience
+                    Skills
                   </p>
                 </Link>
 

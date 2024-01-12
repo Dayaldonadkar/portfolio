@@ -10,7 +10,7 @@ import alemeno from "../Assets/Alemeno.png";
 const Projects = () => {
   return (
     <div
-      className=" flex justify-center font-montserrat bg-[#F8F4EC] shadow-xl lg:py-10"
+      className=" flex justify-center font-montserrat bg-[#F8F4EC] shadow-xl lg:py-10 -z-10"
       id="project"
     >
       <div className="md:w-[90%] lg:w-[90%] xl:w-[78%] 2xl:w-[80%] lg:px-14">
