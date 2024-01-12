@@ -10,13 +10,7 @@ import {
   scrollSpy,
 } from "react-scroll";
 
-const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
-  const handleChange = () => {
-    setShowMenu(!showMenu);
-  };
-
+const Navbar = ({ handleChange, showMenu, setShowMenu }) => {
   const scrollTo = () => {
     scroll.scrollTo(0); // Scrolling to 100px from the top of the page.
   };
@@ -30,7 +24,9 @@ const Navbar = () => {
     <div className="bg-[#F8F9FA] flex justify-center sticky top-0 z-10">
       <div className="flex justify-between w-[90%] md:w-[91%] lg:w-[80%] xl:w-[65%]  py-3 relative">
         <div className="flex justify-between items-center w-[100%] space-x-5">
-          <h1 className="text-3xl text-[#673AB7] font-lovelight">Dayal</h1>
+          <h1 className="text-3xl text-[#673AB7] font-lovelight font-medium">
+            Dayal.<span className="text-lg font-semibold">dev</span>
+          </h1>
           <div className="flex justify-end">
             <div className="hidden md:block text-sm ">
               <div className="flex space-x-6 justify-end  font-montserrat text-[#707071] ">
@@ -93,7 +89,18 @@ const Navbar = () => {
                   </p>
                 </Link>
 
-                <p className="hover:text-black hover:cursor-pointer">Contact</p>
+                <p className="hover:text-black hover:cursor-pointer">
+                  <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={500}
+                  >
+                    Contact
+                  </Link>
+                </p>
               </div>
             </div>
           </div>
@@ -107,11 +114,12 @@ const Navbar = () => {
         <div className="absolute top-14 bg-[#F8F9FA] w-[100%] flex justify-center md:hidden">
           <div className=" py-3 font-montserrat text-[15px]">
             <p
-              onClick={(() => scrollTo(), () => handleChange())}
+              onClick={combinedFunction}
               className="hover:text-black hover:cursor-pointer py-1"
             >
               Home
             </p>
+
             <Link
               activeClass="active"
               to="experience"
@@ -137,7 +145,7 @@ const Navbar = () => {
             >
               <div
                 className="hover:text-black hover:cursor-pointer py-1"
-                onClick={() => handleChange()}
+                onClick={handleChange}
               >
                 What I do
               </div>
@@ -150,7 +158,12 @@ const Navbar = () => {
               offset={-50}
               duration={500}
             >
-              <p className="hover:text-black hover:cursor-pointer">Projects</p>{" "}
+              <p
+                className="hover:text-black hover:cursor-pointer"
+                onClick={handleChange}
+              >
+                Projects
+              </p>
             </Link>
             <Link
               activeClass="active"
@@ -160,8 +173,28 @@ const Navbar = () => {
               offset={10}
               duration={500}
             >
-              <p className="hover:text-black hover:cursor-pointer py-1">
+              <p
+                className="hover:text-black hover:cursor-pointer py-1"
+                onClick={handleChange}
+              >
                 Skills
+              </p>
+            </Link>
+
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+            >
+              <p
+                className="hover:text-black hover:cursor-pointer"
+                onClick={handleChange}
+              >
+                {" "}
+                Contact{" "}
               </p>
             </Link>
           </div>

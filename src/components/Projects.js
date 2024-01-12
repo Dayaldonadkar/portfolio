@@ -13,7 +13,7 @@ const Projects = () => {
       className=" flex justify-center font-montserrat bg-[#F8F4EC] shadow-xl lg:py-10 -z-10"
       id="project"
     >
-      <div className="md:w-[90%]  xl:w-[78%] 2xl:w-[80%] lg:px-14">
+      <div className="md:w-[90%] lg:w-[90%] xl:w-[78%] 2xl:w-[80%] lg:px-14">
         <h1 className="text-4xl font-semibold text-center mt-5 mb-6">
           <span className="border-b-4 border-[#673AB7]/40 px-1 pb-1">
             Projects

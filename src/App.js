@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -10,16 +10,26 @@ import TechnologyUsed from "./components/TechnologyUsed";
 import Contact from "./components/Contact";
 
 const App = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const handleChange = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <BrowserRouter>
-      <Navbar />
-      <Home />
-      <About />
-      <Experience />
-      <Projects />
-      <What />
-      <TechnologyUsed />
-      <Contact />
+      <Navbar
+        handleChange={handleChange}
+        showMenu={showMenu}
+        setShowMenu={setShowMenu}
+      />
+      <div onClick={handleChange}>
+        <Home />
+        <About />
+        <Experience />
+        <Projects />
+        <What />
+        <TechnologyUsed />
+        <Contact />
+      </div>
     </BrowserRouter>
   );
 };

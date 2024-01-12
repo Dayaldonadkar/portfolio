@@ -6,7 +6,7 @@ const ProjectCard = ({ image, description, name, link }) => {
       <div className="w-[90%] font-montserrat bg-white pb-4 rounded-xl">
         <a href={link} target="_blank" f rel="noreferrer">
           <img
-            className="lg:h-80 xl:h-60 xl:w-full rounded-tl-xl rounded-tr-xl"
+            className="lg:h-80 xl:h-60  xl:w-full rounded-tl-xl rounded-tr-xl"
             src={image}
             alt=""
           />
