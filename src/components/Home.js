@@ -48,7 +48,7 @@ const Home = () => {
             </div>
 
             <div className="flex justify-center md:justify-start text-white pt-5">
-              <div className="flex flex-col  sm:flex-row space-y-5 md:space-y-0 md:space-x-5">
+              <div className="flex flex-col  sm:flex-row space-y-5 sm:space-y-0 sm:space-x-5">
                 <a
                   href="https://github.com/Dayaldonadkar"
                   target="_blank"

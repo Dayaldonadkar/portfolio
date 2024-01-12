@@ -68,7 +68,7 @@ const Navbar = () => {
                     to="what"
                     spy={true}
                     smooth={true}
-                    offset={10}
+                    offset={-50}
                     duration={500}
                   >
                     What I do
