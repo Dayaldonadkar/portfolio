@@ -36,6 +36,7 @@ const Projects = () => {
           with powerful functionality. Experience the latest tech stories,
           engage in discussions, and stay informed in a user-friendly
           environment."
+              link="https://ecomstore-mu.vercel.app/"
             />
             <ProjectCard
               image={dukaandar}
@@ -68,7 +69,7 @@ const Projects = () => {
               with powerful functionality. Experience the latest tech stories,
               engage in discussions, and stay informed in a user-friendly
               environment."
-              link="https://todo-app-iota-lilac.vercel.app/"
+              link="https://alemeno-task-weld.vercel.app/"
             />
           </div>
         </div>
