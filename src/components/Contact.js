@@ -13,29 +13,43 @@ const Contact = () => {
         </h1>
 
         <div className="space-y-4 sm:space-y-0 sm:grid grid-cols-2 gap-y-8  gap-x-4 lg:gap-x-7 lg:grid-cols-3">
-          <div className="flex items-center space-x-4 bg-white   px-4 py-6 rounded-lg hover:shadow-xl hover:border hover:border-[#C2B0E2] hover:scale-105 transition duration-200 cursor-pointer">
-            <LinkedInIcon fontSize="large" />
-            <div>
-              <p className="text-xl font-medium">LinkedIn</p>
-              <p>Dayaldonadkar</p>
+          <a
+            href="https://www.linkedin.com/in/dayal-sudhakar-6657b8286/"
+            target="_blank"
+            f
+            rel="noreferrer"
+          >
+            <div className="flex items-center space-x-4 bg-white   px-4 py-6 rounded-lg hover:shadow-xl hover:border hover:border-[#C2B0E2] hover:scale-105 transition duration-200 cursor-pointer">
+              <LinkedInIcon fontSize="large" />
+              <div>
+                <p className="text-xl font-medium">LinkedIn</p>
+                <p>Dayaldonadkar</p>
+              </div>
             </div>
-          </div>
+          </a>
           <div className="flex items-center space-x-4  bg-white  px-4 py-6 rounded-lg hover:shadow-xl hover:border hover:border-[#C2B0E2] hover:scale-105 transition duration-200 cursor-pointer">
             <MailIcon fontSize="large" />
             <div>
               <p className="text-xl font-medium">Email</p>
               <p>Dayaldonadkar@hotmail.com</p>
             </div>
-          </div>
-          <div className="flex items-center space-x-4  bg-white  px-4 py-6 rounded-xl hover:shadow-xl hover:border hover:border-[#C2B0E2] hover:scale-105 transition duration-200 cursor-pointer">
-            <div className="">
-              <GitHubIcon fontSize="large" />
+          </div>{" "}
+          <a
+            href="https://github.com/Dayaldonadkar"
+            target="_blank"
+            f
+            rel="noreferrer"
+          >
+            <div className="flex items-center space-x-4  bg-white  px-4 py-6 rounded-xl hover:shadow-xl hover:border hover:border-[#C2B0E2] hover:scale-105 transition duration-200 cursor-pointer">
+              <div className="">
+                <GitHubIcon fontSize="large" />
+              </div>
+              <div>
+                <p className="text-xl font-medium">Github</p>
+                <p>Dayaldonadkar</p>
+              </div>
             </div>
-            <div>
-              <p className="text-xl font-medium">Github</p>
-              <p>Dayaldonadkar</p>
-            </div>
-          </div>
+          </a>
           <div className="flex items-center space-x-4  bg-white  px-4 py-6 rounded-lg hover:shadow-xl hover:border hover:border-[#C2B0E2] hover:scale-105 transition duration-200 cursor-pointer">
             <LocalPhoneIcon fontSize="large" />
             <div>
