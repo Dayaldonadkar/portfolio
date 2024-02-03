@@ -21,7 +21,11 @@ const App = () => {
         showMenu={showMenu}
         setShowMenu={setShowMenu}
       />
-      <div onClick={handleChange}>
+      <div
+        onClick={() => {
+          setShowMenu(false);
+        }}
+      >
         <Home />
         <About />
         <Experience />
