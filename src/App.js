@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -14,6 +14,17 @@ const App = () => {
   const handleChange = () => {
     setShowMenu(!showMenu);
   };
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowMenu(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <BrowserRouter>
       <Navbar
